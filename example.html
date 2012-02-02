@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tabs</title>
+		<link rel="stylesheet" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
+		<style>
+			body {
+				padding: 30px;
+				color: #454545;
+			}
+			.tabsLite-mainDiv ul {
+				margin: 0;
+				padding: 0;
+			}
+			.tabsLite-tab {
+				list-style-type: none;
+				display: inline;
+				padding: 10px 10px 0 10px;
+				border: solid 2px #CCC;
+				border-top-left-radius: 10px;
+				border-top-right-radius: 10px;
+				background-color: #E6E6E6;
+				cursor: pointer;
+			}
+			.tabsLite-tab-selected {
+				background-color: #F6F6F6;
+				border-bottom: solid 2px #F6F6F6;;
+			}
+			.tabsLite-tab a {
+				color: #000;
+				text-decoration: none;
+				font-weight: bold;
+			}
+			.tabsLite-panel {
+				background-color: #F6F6F6;
+				padding: 10px;
+				border: solid 2px #CCC;
+			}
+		</style>
+	</head>
+	<body>
+		
+		<div id="tabs">
+			<ul>
+				<li><a href="#tab-1">Tab One</a></li>
+				<li><a href="#tab-2">Tab Two</a></li>
+				<li><a href="#tab-3">Tab Three</a></li>
+			</ul>
+			<div id="tab-1">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin rhoncus dictum lorem sit amet aliquet. Quisque non sapien tellus, non dictum tortor. Pellentesque at ligula a ipsum aliquam malesuada. Duis sed euismod libero. Quisque luctus posuere massa ut suscipit. Nulla facilisi. Proin luctus mattis ipsum sit amet lacinia. Vivamus mauris tortor, ultrices a aliquam pulvinar, tincidunt sit amet lacus.</p>
+			</div>
+			<div id="tab-2">
+				<p>Nullam in massa tellus, non faucibus ipsum. Phasellus quis risus mollis arcu elementum sodales. Sed elementum diam in diam cursus semper. Donec convallis feugiat ante, at tempor quam commodo eget. Nam vulputate euismod libero. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi pulvinar consequat erat, non malesuada erat viverra id. Vivamus pharetra nisl eu diam venenatis mollis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed sit amet diam et sapien rutrum congue. Cras aliquet fringilla facilisis. Vivamus ipsum justo, venenatis eu aliquam vel, accumsan vel lorem. Sed vel lorem sapien, eget elementum dui. Etiam sit amet dapibus lacus.</p>
+			</div>
+			<div id="tab-3">
+				<p>Nunc in nisi vel quam elementum tincidunt. Praesent ac risus eu justo fermentum mattis. Aliquam volutpat velit at erat sagittis euismod. Praesent massa est, convallis a pharetra a, tincidunt ut enim. Praesent blandit interdum sapien, in vehicula justo porttitor vitae. Aenean egestas ornare sem. Mauris nibh purus, suscipit ut gravida ut, hendrerit eget lorem. Sed hendrerit risus vel arcu vulputate sollicitudin. Nullam ante diam, scelerisque non mattis eu, venenatis eu dolor. Integer eget ipsum tortor.</p>
+			</div>
+		</div>
+		
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+		<script src="jquery.tabsLite.1.0.js"></script>
+		<script>
+			$(function(){
+				$('#tabs').tabsLite();
+			});
+		</script>
+		
+	</body>
+</html>
