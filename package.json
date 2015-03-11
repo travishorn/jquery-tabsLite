@@ -2,7 +2,7 @@
   "name": "jquery-tabslite",
   "version": "1.0.1",
   "description": "A lighter version of jQuery UI's tabs. For when you just need simple tab functionality and don't need to include the entire jQuery UI library.",
-  "main": "jquery.tabsList.js",
+  "main": "jquery.tabsLite.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/travishorn/jquery-tabsLite.git"
